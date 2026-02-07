@@ -12,7 +12,7 @@ if (parede == 0) {
 }
 
 // Y dentro da sala
-pos_y = 204;
+pos_y = -8;
 
 // Cria o coletável
 instance_create_layer(pos_x, pos_y, "Instances", obj_batata_frita);
