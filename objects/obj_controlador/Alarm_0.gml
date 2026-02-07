@@ -18,6 +18,7 @@ pos_y = -8;
 
 // Cria o coletável
 //Organizei uma lista com todos os coletáveis que podem surgir
+randomise();
 var lista_coletaveis = 
 [
     obj_batata_frita,
