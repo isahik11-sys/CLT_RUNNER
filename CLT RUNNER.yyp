@@ -42,7 +42,10 @@
     {"id":{"name":"obj_coxinha","path":"objects/obj_coxinha/obj_coxinha.yy",},},
     {"id":{"name":"obj_hamburger","path":"objects/obj_hamburger/obj_hamburger.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"obj_sound_control","path":"objects/obj_sound_control/obj_sound_control.yy",},},
+    {"id":{"name":"rm_game_end","path":"rooms/rm_game_end/rm_game_end.yy",},},
+    {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"id":{"name":"snd_evil_laugh","path":"sounds/snd_evil_laugh/snd_evil_laugh.yy",},},
     {"id":{"name":"spr_batata_frita","path":"sprites/spr_batata_frita/spr_batata_frita.yy",},},
     {"id":{"name":"spr_chocolate","path":"sprites/spr_chocolate/spr_chocolate.yy",},},
     {"id":{"name":"spr_clt","path":"sprites/spr_clt/spr_clt.yy",},},
@@ -54,7 +57,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"roomId":{"name":"rm_game_end","path":"rooms/rm_game_end/rm_game_end.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
