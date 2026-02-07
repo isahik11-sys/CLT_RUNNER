@@ -5,9 +5,11 @@ var pos_y;
 // Escolhe aleatoriamente a parede
 parede = irandom(1); // 0 = esquerda | 1 = direita
 
-if (parede == 0) {
+if (parede == 0) 
+{
     pos_x = 24; // parede esquerda
-} else {
+} else 
+{
     pos_x = 156; // parede direita
 }
 
