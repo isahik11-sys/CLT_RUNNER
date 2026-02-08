@@ -8,9 +8,24 @@ _parede = irandom(1); // 0 = esquerda | 1 = direita
 if (_parede == 0) 
 {
     _pos_x = 24; // parede esquerda
-} else 
+	rep_esquerda++
+	rep_direita--
+} 
+else 
 {
     _pos_x = 156; // parede direita
+	rep_direita++
+	rep_esquerda--
+}
+
+// se esquerda já repetiu demais, força direita
+if (_parede == 0 && rep_esquerda >= max_rep_esq) 
+{
+    _parede = 1;
+}
+if (_parede == 1 && rep_direita >= max_rep_dir) 
+{
+    _parede = 0;
 }
 
 // Y dentro da sala
