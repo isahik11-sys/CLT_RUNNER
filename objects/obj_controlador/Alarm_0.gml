@@ -37,23 +37,26 @@ var total =
 
 var _r = irandom(total - 1); //Um número entre 0 e 249 será criado
 
-if (_r < _chance_batata) 
-{
-    instance_create_layer(_pos_x, _pos_y, "Instances", obj_batata_frita);
-}
-else if (_r < _chance_batata + _chance_chocolate) 
+//Aqui complica um pouco
+//Vamos fazer o sistema de spawns de acordo com a chance
+//Nós fizemos uma régua com cada uma das chnaces dos objs
+if (_r < _chance_chocolate)
 {
     instance_create_layer(_pos_x, _pos_y, "Instances", obj_chocolate);
 }
-else if (_r < _chance_batata + _chance_chocolate + _chance_clt) 
+else if (_r < _chance_chocolate + _chance_batata)
+{
+    instance_create_layer(_pos_x, _pos_y, "Instances", obj_batata_frita);
+}
+else if (_r < _chance_chocolate + _chance_batata + _chance_clt)
 {
     instance_create_layer(_pos_x, _pos_y, "Instances", obj_clt);
 }
-else if (_r < _chance_batata + _chance_chocolate + _chance_clt + _chance_coxinha) 
+else if (_r < _chance_chocolate + _chance_batata + _chance_clt + _chance_coxinha)
 {
     instance_create_layer(_pos_x, _pos_y, "Instances", obj_coxinha);
 }
-else 
+else
 {
     instance_create_layer(_pos_x, _pos_y, "Instances", obj_hamburger);
 }
