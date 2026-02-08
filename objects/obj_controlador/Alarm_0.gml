@@ -1,40 +1,62 @@
-var parede;
-var pos_x;
-var pos_y;
+var _parede;
+var _pos_x;
+var _pos_y;
 
 // Escolhe aleatoriamente a parede
-parede = irandom(1); // 0 = esquerda | 1 = direita
+_parede = irandom(1); // 0 = esquerda | 1 = direita
 
-if (parede == 0) 
+if (_parede == 0) 
 {
-    pos_x = 24; // parede esquerda
+    _pos_x = 24; // parede esquerda
 } else 
 {
-    pos_x = 156; // parede direita
+    _pos_x = 156; // parede direita
 }
 
 // Y dentro da sala
-pos_y = -8;
+_pos_y = -8;
 
-// Cria o coletável
-//Organizei uma lista com todos os coletáveis que podem surgir
-randomise();
-var lista_coletaveis = 
-[
-    obj_batata_frita,
-    obj_chocolate,
-    obj_clt,
-	obj_coxinha,
-	obj_hamburger
-];
+// Criando o coletável
 
-//Vou explicar aqui parte por parte
-//irandom sorteia um número inteiro entre 0 e n
-//array_lenght retorna quantos elementos tem na lista/array
-//O -1 está ali pois arrays começam do 0
-var sorteado = lista_coletaveis[ irandom(array_length(lista_coletaveis) - 1) ];
+var _r = irandom(99); // número entre 0 e 99
 
-instance_create_layer(pos_x, pos_y, "Instances", sorteado);
+//Criando as chances de cada obj spawnar
+var _chance_batata = 60;
+var _chance_chocolate = 70;
+var _chance_clt = 50;
+var _chance_coxinha = 40;
+var _chance_hamburger = 30;
+
+//Vamos fazer uma soma de todas as chances
+var total =
+    _chance_batata +
+    _chance_chocolate +
+    _chance_clt +
+    _chance_coxinha +
+    _chance_hamburger;
+
+var _r = irandom(total - 1); //Um número entre 0 e 249 será criado
+
+if (_r < _chance_batata) 
+{
+    instance_create_layer(_pos_x, _pos_y, "Instances", obj_batata_frita);
+}
+else if (_r < _chance_batata + _chance_chocolate) 
+{
+    instance_create_layer(_pos_x, _pos_y, "Instances", obj_chocolate);
+}
+else if (_r < _chance_batata + _chance_chocolate + _chance_clt) 
+{
+    instance_create_layer(_pos_x, _pos_y, "Instances", obj_clt);
+}
+else if (_r < _chance_batata + _chance_chocolate + _chance_clt + _chance_coxinha) 
+{
+    instance_create_layer(_pos_x, _pos_y, "Instances", obj_coxinha);
+}
+else 
+{
+    instance_create_layer(_pos_x, _pos_y, "Instances", obj_hamburger);
+}
 
 //Redefinindo o alarme
 alarm[0] = irandom_range(60, 180);
