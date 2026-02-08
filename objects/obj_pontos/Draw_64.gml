@@ -1,0 +1,1 @@
+draw_text_scribble(x, y, "[wave]" + string(global.pontos) + "[/wave]");

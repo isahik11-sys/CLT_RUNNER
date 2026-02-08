@@ -23,6 +23,7 @@ if (_parede == 0 && rep_esquerda >= max_rep_esq)
 {
     _parede = 1;
 }
+// se direita já repetiu demais, força esquerda
 if (_parede == 1 && rep_direita >= max_rep_dir) 
 {
     _parede = 0;
