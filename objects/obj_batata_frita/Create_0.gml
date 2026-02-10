@@ -1,4 +1,4 @@
-pontos = 250;
+pontos = 550;
 vel = 2;
 
 //Mudando o ângulo do obj pra caso ele esteja na parede da direita
