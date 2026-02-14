@@ -205,6 +205,8 @@
     {"id":{"name":"__shd_scribble_bake_shadow","path":"shaders/__shd_scribble_bake_shadow/__shd_scribble_bake_shadow.yy",},},
     {"id":{"name":"__shd_scribble","path":"shaders/__shd_scribble/__shd_scribble.yy",},},
     {"id":{"name":"snd_evil_laugh","path":"sounds/snd_evil_laugh/snd_evil_laugh.yy",},},
+    {"id":{"name":"snd_musica_jogando","path":"sounds/snd_musica_jogando/snd_musica_jogando.yy",},},
+    {"id":{"name":"snd_pegando_item","path":"sounds/snd_pegando_item/snd_pegando_item.yy",},},
     {"id":{"name":"scribble_fallback_bulletpoint","path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},},
     {"id":{"name":"spr_batata_frita","path":"sprites/spr_batata_frita/spr_batata_frita.yy",},},
     {"id":{"name":"spr_chocolate","path":"sprites/spr_chocolate/spr_chocolate.yy",},},

@@ -1,3 +1,5 @@
+audio_play_sound(snd_musica_jogando, 1, 0);
+
 alarm[0] = irandom_range(60, 180);
 alarm[1] = 300;
 
