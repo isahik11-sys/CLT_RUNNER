@@ -59,6 +59,7 @@
     {"id":{"name":"obj_batata_frita","path":"objects/obj_batata_frita/obj_batata_frita.yy",},},
     {"id":{"name":"obj_chocolate","path":"objects/obj_chocolate/obj_chocolate.yy",},},
     {"id":{"name":"obj_clt","path":"objects/obj_clt/obj_clt.yy",},},
+    {"id":{"name":"obj_controlador_2","path":"objects/obj_controlador_2/obj_controlador_2.yy",},},
     {"id":{"name":"obj_controlador","path":"objects/obj_controlador/obj_controlador.yy",},},
     {"id":{"name":"obj_coxinha","path":"objects/obj_coxinha/obj_coxinha.yy",},},
     {"id":{"name":"obj_hamburger","path":"objects/obj_hamburger/obj_hamburger.yy",},},

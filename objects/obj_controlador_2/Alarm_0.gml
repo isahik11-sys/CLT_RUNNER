@@ -39,7 +39,7 @@ var _r = irandom(99); // número entre 0 e 99
 //Criando as chances de cada obj spawnar
 var _chance_batata = 60;
 var _chance_chocolate = 70;
-var _chance_clt = 60;
+var _chance_clt = 80;
 var _chance_coxinha = 40;
 var _chance_hamburger = 30;
 
@@ -77,7 +77,5 @@ else
     instance_create_layer(_pos_x, _pos_y, "Instances", obj_hamburger);
 }
 
-_chance_clt += 1;
-
 //Redefinindo o alarme
-alarm[0] = 60;
+alarm[0] = 160;

@@ -1,5 +1,4 @@
 alarm[0] = irandom_range(60, 180);
-alarm[1] = 300;
 
 rep_esquerda = 0; //Criando uma variável para controlar a esquerda
 max_rep_esq = 3; // máximo de vezes seguidas

@@ -1,4 +1,4 @@
-vel = 2;
+vel = global.velocidade;
 
 //Mudando o ângulo do obj pra caso ele esteja na parede da direita
 if (x = 156)
