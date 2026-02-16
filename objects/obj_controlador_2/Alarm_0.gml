@@ -78,4 +78,4 @@ else
 }
 
 //Redefinindo o alarme
-alarm[0] = 160;
+alarm[0] = 211;
